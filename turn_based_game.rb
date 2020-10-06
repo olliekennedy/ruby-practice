@@ -10,4 +10,4 @@ def game
   return "Good move! You live still! You win!" if second_move == "forward"
 end
 
-puts game 
+puts game
