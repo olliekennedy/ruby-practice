@@ -7,7 +7,6 @@ def snail(arr)
   circle_end = 0
 
   while true do
-    #if true
       while x < width - circle_end
         x += 1
         snail << arr[y][x]
@@ -16,8 +15,6 @@ def snail(arr)
         y += 1
         snail << arr[y][x]
       end
-    #end
-    #if true
       while x > circle_end
         x -= 1
         snail << arr[y][x]
@@ -29,7 +26,6 @@ def snail(arr)
     circle_end += 1
     break if circle_end == 20
   end
-
   snail
 end
 

@@ -9,6 +9,7 @@ def fibonacci(n)
   end
 end
 
-@fib_cache = {}
+@fib_cache = {1 => 0, 2 => 1}
 
-puts fibonacci(9360)
+puts fibonacci(20)
+puts @fib_cache
