@@ -1,4 +1,5 @@
 require 'item'
+require 'helper'
 
 class Checkout
   def initialize
@@ -15,6 +16,6 @@ class Checkout
     @scanned_items.each do |x|
       total_price += x.price
     end
-    total_price
+    num_to_currency(total_price)
   end
 end

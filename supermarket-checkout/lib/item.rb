@@ -1,10 +1,12 @@
+require 'helper'
+
 class Item
+  attr_reader :price
   def initialize(price)
     @price = price
   end
 
-  def price
-    "I'm returning the @price"
-    @price
+  def formatted_price
+    num_to_currency(@price)
   end
 end
